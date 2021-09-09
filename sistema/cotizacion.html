@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/paginaWeb.css">
+    <title>Solicitar Cotización || TM</title>
+</head>
+<body>
+
+    <header class="header">
+		<div class="menu-bar">
+            <a href="../index.html"><img class="imgMobile" src="../img/logo.png" alt="Logo Transportes MAZ"></a>
+			<div class="click-me">
+				<span class="bar"></span>
+				<span class="bar"></span>
+				<span class="bar"></span>
+			</div>
+		</div>
+		<div class="content-menu" id="rotarMenu">
+			<div class="nav">
+                <a href="../index.html"><img src="../img/logo.png" alt="Logo Transportes MAZ"></a>
+				<ul class="menu_v">
+					<li class="resaltar"><a href="../index.html">Nosotros</a></li>
+					<li><a href="#">Servicios</a></li>
+					<li><a href="#">Cotizaciones</a>
+                        <ul>
+                            <li> <a href="#">Modificar Mi Solicitud</a> </li>
+                            <li> <a href="new.html">Solicitar Cotización</a> </li>
+                        </ul>
+                    </li>
+				</ul>
+			</div>
+		</div>
+	</header>
+
+	<div class="separador"></div>
+    
+
+    <h1 class="t-contacto">Datos de Contacto</h1>
+
+    <form action="" id="solicitud" class="solicitud " method="POST">
+        <fieldset class="contenedor-form">
+            <legend><img src="../img/delivery.png" alt="Author Kiranshastry"></legend>
+            <div class="icocno" hidden>Icons made by <a href="https://www.flaticon.com/authors/kiranshastry" title="Kiranshastry">Kiranshastry</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+
+            <div class="contenedor-inputs">
+                <input name="nombre" id="nombre" class="input_48" type="text" placeholder="Nombre"></input>
+                <input name="apellidos" id="apellidos" type="text" class="input_48" placeholder="Apellidos"></input>
+                <input name="empresa" id="empresa" type="text" class="input_48" placeholder="Empresa"></input>
+                <input name="email" id="email" type="email" class="input_48" placeholder="Correo"></input>
+                <input name="telefono" id="telefono" type="tel" class="input_48" placeholder="Teléfono"></input>
+                <select name="unidad" id="unidad" class="input_48">
+                    <option value="" disabled selected>-- Seleccione Tipo de Unidad</option>
+                    <option value="Trailer">Trailer</option>
+                    <option value="Torton">Torton</option>
+                    <option value="Camioneta 3/2">Camioneta 3/2</option>
+                    <option value="Camioneta Chica">Camioneta Chica</option>
+                </select>
+
+                <div class="input_100">
+                    <label for="datosRec">Datos de Recolección: </label>
+                    <textarea name="datosRec" id="datosRec" placeholder="Porfavor ingrese la dirección completa donde se requiere la unidad para recolectar su mercancía" class="input_100"></textarea>
+                </div>
+
+                <div class="datos input_100">
+                    <div class="input_48">
+                        <label  for="fecha">Fecha</label>
+                        <input name="fecha" id="fecha" class="fecha input_48" type="date"></input>
+                    </div>
+
+                    <div class="input_48">
+                        <label for="hora" >Hora</label>
+                        <input class="input_48 id="hora" type="time">
+                    </div>
+
+                </div>
+
+
+
+                <div class="input_100">
+                    <label for="datosEnt">Datos de Entrega: </label>
+                    <textarea name="datosEnt" id="datosEnt" placeholder="Porfavor ingrese la dirección completa donde se desea que se entregue la mercancía" class="input_100"></textarea>
+    
+                </div>
+
+                <div class="input_100">
+                    <p class="parrafo">¿Desea asegurar su mercancía?</p>
+
+                    <p>Este servicio es opcional y se cobrará sobre el valor declarado de la mercancía, el cuál tendrá un costo de 1.5% del valor asegurado y la cantidad mínima de $50,000.00, cantidad máxima $500,000.00</p>
+                    <div class="form-radio">
+                        <label for="asegurar">Asegurar</label>
+                        <input name="asegurar" id="asegurar" type="radio" value="asegurar">
+              
+                        <label for="noAsegurar">No Asegurar</label>
+                        <input name="asegurar" id="noAsegurar" type="radio" value="noAsegurar">
+                        
+                    </div>
+                    <div class="mostrar" id="mostrar">
+                        <p class="instruccion" >Ingrese solo Números*</p>
+                        <input name="valorMercancia" id="valorMercancia" type="text" placeholder="Ingrese el valor de la mercancia" class="input_48">
+                    </div>
+                </div>
+                
+                <div class="input_100">
+                    <p class="parrafo">¿Desea agragar maniobras a su servicio?</p>
+                    <div class="form-radio">
+                        <label for="maniobras">Si</label>
+                        <input name="maniobras" id="maniobras" type="radio" value="si">
+
+                        <label for="noManiobras">No</label>
+                        <input name="maniobras" id="noManiobras" type="radio" value="no">
+                    </div>
+                    <div class="mostrarManiobras">
+                        <p class="instruccion">Campo Obligatorio*</p>
+                        <textarea name="comentarios" id="comentarios" placeholder="Porfavor platiquenos la naturaleza de las maniobras requeridas" ></textarea>
+                    </div>
+                    <p class="parrafo">Comentarios Adicionales</p>
+
+                    <textarea name="adiocionales" id="adicionales" placeholder="Porfavor platiquenos Un poco mas de mercancía" ></textarea>
+
+                </div>
+ 
+            </div>
+            
+        </fieldset>
+
+        <div class="contenedor-form adicional">
+            <div class="form-radio">
+                <input name="ofertas" id="ofertas" type="checkbox" value="SI" >
+                <label for="ofertas">Recibir Ofertas</label>
+            </div> 
+    
+            <div class="form-radio">
+                <input name="terminos" id="terminos" type="checkbox" >
+                <label for="terminos">Acepto <a href="">Términos y Condiciones</a></label>
+            </div> 
+
+            <div class="errors"></div>
+            
+            <input type="submit" class="btn" name="enviar" id="enviar" value="Enviar">
+        </div>
+    </form>
+
+
+
+    <script src="../js/menu.js"></script>
+    <script src="../js/formularios.js"></script>
+    
+</body>
+</html>
